@@ -39,7 +39,7 @@ Resources:
   PinpointPersonalizeRole:
     Type: AWS::IAM::Role
     Properties:
-      RoleName: !Sub ${Uid}-PinptP9e # Referenced by name in messaging notebook
+      RoleName: !Sub PinptP9e-${AWS::StackName}
       Path: /
       ManagedPolicyArns:
         - arn:aws:iam::aws:policy/service-role/AWSLambdaVPCAccessExecutionRole

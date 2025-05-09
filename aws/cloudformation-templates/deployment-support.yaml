@@ -622,7 +622,7 @@ Resources:
                 Action:
                   - iam:PassRole
                 Resource:
-                  - !Sub 'arn:aws:iam::${AWS::AccountId}:role/${Uid}-PinptP9e'
+                  - !Sub 'arn:aws:iam::${AWS::AccountId}:role/PinptP9e-${AWS::StackName}'
 
   PinpointPreCreateRule:
     Condition: WaitForOffersCampaignCreationAndDeployPreCreatePinpointWorkshop
